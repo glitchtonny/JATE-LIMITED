@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import './Navbar.css';
 import HomePage from './HomePage';
 //import Blog form ""
 //import Login from ""

@@ -8,5 +8,9 @@ JATE LIMITED WEBSITE
 <h1>Setup and Installation</h1>
 
 <h1>Technologies used</h1>
+HTML
+CSS
+REACT JS
 
 <h1>AUTHORS</h1>
+ JATE LIMITED

@@ -7,30 +7,30 @@ import './Navbar.css';
 import logo from "./assets/logo.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [searchQuery, setSearchQuery] = useState('');
+  // const [searchResults, setSearchResults] = useState([]);
 
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleNavbar = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
-  const handleSearchChange = (event) =>{
-    setSearchQuery(event.target.value);
-  };
+  // const handleSearchChange = (event) =>{
+  //   setSearchQuery(event.target.value);
+  // };
 
-  const handleSearchSubmit = (event)=>{
-    event.preventDefault();
-    const results =[
-        `Result for "${searchQuery}" 1`,
-        `Result for "${searchQuery}" 2`,
-        `Result for "${searchQuery}" 3`,
-    ];
-    setSearchResults(results);
-    setSearchQuery("");
+  // const handleSearchSubmit = (event)=>{
+  //   event.preventDefault();
+  //   const results =[
+  //       `Result for "${searchQuery}" 1`,
+  //       `Result for "${searchQuery}" 2`,
+  //       `Result for "${searchQuery}" 3`,
+  //   ];
+  //   setSearchResults(results);
+  //   setSearchQuery("");
 
-  }
+  // }
 
   return (
     <nav className="navbar">
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <NavLink to="/" activeClassName="active">HOME</NavLink>
           <NavLink to="/Blog" activeClassName="active">BLOGS</NavLink>
-          <NavLink to="/login" activeClassName="active">BLOGS</NavLink>
+          <NavLink to="/LoginSignUp" activeClassName="active">LOGIN/SIGNUP</NavLink>
 
         </div>
         {/* <div className={`navbar-user ${isOpen ? 'open' : ''}`}>

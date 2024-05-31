@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import DetailPage from './DetailPage';
 import Navbar from './Navbar';
-import Blog from '.src/assets/Blog';
+import Blog from './assets/Blog';
 import LoginSignUp from '.src/LoginSignUp/LoginSignUp';
 
 const App = () => {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route exact path="/:type/:id" element={<DetailPage/>} />

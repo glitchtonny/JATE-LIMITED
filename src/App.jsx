@@ -2,8 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import DetailPage from './DetailPage';
-import Navbar from './NavBar';
-import Blog from './Blog';
+
+import Navbar from './Navbar';
+import Blog from '.src/assets/Blog';
+
+
+
+
+
 const App = () => {
   return (
     <Router>
@@ -11,6 +17,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route exact path="/:type/:id" element={<DetailPage/>} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );

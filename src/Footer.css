@@ -1,0 +1,17 @@
+.footer {
+    background-color: bisque;
+    color: blueviolet;
+    padding: 20px 0;
+  }
+  
+  .footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  

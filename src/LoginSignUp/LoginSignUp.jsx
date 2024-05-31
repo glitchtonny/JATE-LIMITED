@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap.min.css';
 import './LoginSignUp.css'
+import Footer from "../Footer";
 
 const LoginSignUp = () => {
   const [action, setAction] = useState("Sign Up");
@@ -63,6 +64,7 @@ const LoginSignUp = () => {
           Login
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

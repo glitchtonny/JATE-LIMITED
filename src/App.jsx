@@ -4,12 +4,12 @@ import HomePage from './HomePage';
 import DetailPage from './DetailPage';
 import Navbar from './Navbar';
 import Blog from './assets/Blog';
-import LoginSignUp from '.src/LoginSignUp/LoginSignUp';
+import LoginSignUp from './LoginSignUp/LoginSignUp';
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route exact path="/:type/:id" element={<DetailPage/>} />

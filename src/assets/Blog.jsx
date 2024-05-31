@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import '../assets/Blog.css';
+import Footer from '../Footer';
 
 function Blog() {
     const [blogData, setBlogData] = useState({});
@@ -96,6 +97,7 @@ function Blog() {
         </ul>
       {/* )} */}
     </div>
+    <Footer />
     </div>
   );
 };

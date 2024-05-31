@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Footer from './Footer';
 
 const DetailPage = () => {
   const { type, id } = useParams();
   const [property, setProperty] = useState(null);
   const [error, setError] = useState('');
-console.log(type)
+  console.log(type)
 
   useEffect(() => {
     const fetchProperty = async () => {
@@ -90,7 +91,7 @@ console.log(type)
           </ol>
       </div>
          
-    
+    <Footer />
     </div>
   );
 };

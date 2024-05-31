@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
+import './navbar.css';
 // import HomePage from './HomePage';
 // import Blog from './assets/Blog';
 
 import logo from "./assets/logo.png";
 
 const Navbar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   // const [searchQuery, setSearchQuery] = useState('');
   // const [searchResults, setSearchResults] = useState([]);
 
 
-  // const toggleNavbar = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   // const handleSearchChange = (event) =>{
   //   setSearchQuery(event.target.value);
@@ -43,9 +43,9 @@ const Navbar = () => {
 
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        <NavLink to="/LoginSignUp" activeClassName="active">LOGIN/SIGNUP</NavLink>
           <NavLink to="/" activeClassName="active">HOME</NavLink>
           <NavLink to="/Blog" activeClassName="active">BLOGS</NavLink>
-          <NavLink to="/LoginSignUp" activeClassName="active">LOGIN/SIGNUP</NavLink>
 
         </div>
         {/* <div className={`navbar-user ${isOpen ? 'open' : ''}`}>

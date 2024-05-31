@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Footer from './Footer'; 
 
 const HomePage = () => {
   const [properties, setProperties] = useState(null);
@@ -45,12 +46,14 @@ const HomePage = () => {
         <h1>House Rentals</h1>
           <div className='rents' >
            {properties.house_rentals.map(rental => (
-                <div key={rental.id}>
+                <div key={rental.id} style={{ width: '600px', padding: '24px'}}>
                   <Link to={`/rental/${rental.id}`}>
                     <h3>{rental.name}</h3>
+                    <img src={rental.image} alt='rents' width="480px" height="350px"/>
                   </Link>
+                  <h3>{rental.price}</h3>
 
-                  <img src={rental.image} alt='rents' width="100%" height="70%"/>
+                 
                 </div>
               ))
             
@@ -63,12 +66,13 @@ const HomePage = () => {
         <h1>House for sale</h1>
         <div className='rents'>
         {properties.house_sales.map(sale => (
-            <div key={sale.id}>
+            <div key={sale.id}  style={{ width: '600px', padding: '20px'}}>
               <Link to={`/sale/${sale.id}`}>
                 <h3>{sale.name}</h3>
+                <img src={sale.image} alt='sales'   width="480px" height="350px" />
               </Link>
+              <h3>{sale.price}</h3>
 
-              <img src={sale.image} alt='sales'   width="100%" height="60%" />
             </div>
           ))
         
@@ -83,12 +87,13 @@ const HomePage = () => {
         <h1>Apartments</h1>
             <div className='rents' >
                {properties.apartments.map(apartment => (
-                  <div key={apartment.id}>
+                  <div key={apartment.id} style={{ width: '600px', padding: '20px'}}>
                     <Link to={`/apartment/${apartment.id}`}>
                       <h3>{apartment.name}</h3>
-                      <img src={apartment.image} alt='apartments'  width="100%" height="60%"/>
-
+                      <img src={apartment.image} alt='apartments'  width="480px" height="350px"/>
                     </Link>
+                    <h3>{apartment.price}</h3>
+
 
                   </div>
                 ))
@@ -99,7 +104,7 @@ const HomePage = () => {
           
       </div>
 
-     
+     <Footer />
     </div>
   );
 };

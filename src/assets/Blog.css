@@ -1,0 +1,22 @@
+.rentals ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .rental-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .images-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .images-row img {
+    width: 32%;
+    height: auto;
+    border-radius: 8px;
+  } 

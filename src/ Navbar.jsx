@@ -4,6 +4,7 @@ import './NavBar.css';
 import HomePage from './HomePage';
 //import Blog form ""
 //import Login from ""
+//import Signup from ""
 import logo from "src/assets/logo.png";
 
 const Navbar = () => {

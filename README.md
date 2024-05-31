@@ -1,8 +1,12 @@
-# React + Vite
+JATE LIMITED WEBSITE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>Description</h1>
 
-Currently, two official plugins are available:
+<p>Jate Limited is a comprehensive real estate application designed to help users find their ideal properties. Our platform features a wide range of estates available for rent and sale, complete with detailed descriptions, high-quality images, and current pricing information. Whether you're looking for a cozy apartment, a spacious house rental, or a property to purchase, Jate Limited provides an intuitive and user-friendly interface to explore and compare listings effortlessly.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>screenshot</h1>
+<h1>Setup and Installation</h1>
+
+<h1>Technologies used</h1>
+
+<h1>AUTHORS</h1>

@@ -2,11 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import DetailPage from './DetailPage';
-
-import Navbar from './Navbar';
-import Blog from '.src/assets/Blog';
-
-
+import Navbar from './ Navbar';
+import Blog from './assets/Blog';
 
 
 

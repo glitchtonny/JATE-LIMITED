@@ -29,8 +29,11 @@
   .navbar-links a, .navbar-user a {
     margin-left: 20px;
     color: #333;
-    text-decoration: none;
-    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: underline overline;
+    font-size: 30px;
+    font-weight: bold;
   }
   
   .navbar-links a:hover, .navbar-user a:hover {

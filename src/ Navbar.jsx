@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import HomePage from './HomePage';
-//import Blog form ""
-//import Login from ""
-//import Signup from ""
-import logo from "src/assets/logo.png";
+// import HomePage from './HomePage';
+// import Blog from './assets/Blog';
+
+import logo from "./assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,18 +36,21 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <NavLink to="/HomePage">JATE Estate</NavLink>
-            <img src={logo} alt="JATE Estate" className="navbar-logo"/>
+
+          <NavLink >JATE Estate
+              <img src={logo} alt="JATE Estate" className="navbar-logo"/>
+          </NavLink>
+
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <NavLink to="/HomePage" activeClassName="active">{HomePage}</NavLink>
-          <NavLink to="/Blog" activeClassName="active">{Blog}</NavLink>
+          <NavLink to="/" activeClassName="active">HOME</NavLink>
+          <NavLink to="/Blog" activeClassName="active">BLOGS</NavLink>
         </div>
-        <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
+        {/* <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
           <NavLink to="/Login" activeClassName="active">{Login}</NavLink>
           <NavLink to="/Signup" activeClassName="active">{SignUp}</NavLink>
-        </div>
-        <div className="navbar-search">
+        </div> */}
+        {/* <div className="navbar-search">
           <form onSubmit={handleSearchSubmit}>
             <input
               type="text"
@@ -67,7 +69,7 @@ const Navbar = () => {
                 </ul>
                 </div>
           )}
-        </div>
+        </div> */}
         <div className="navbar-toggle" onClick={toggleNavbar}>
           <span></span>
           <span></span>

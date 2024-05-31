@@ -1,23 +1,23 @@
 import React, { useState, useEffect} from 'react';
+import '../assets/Blog.css';
 
 function Blog() {
     const [blogData, setBlogData] = useState({});
   
     useEffect(() => {
-      fetch('/db.json')
+      fetch('http://localhost:4000/properties')
         .then((response) => response.json())
-        .then((data) => setBlogData(data.blog));
+        .then((data) => setBlogData(data));
     }, []);
 
   return (
-    <BlogContainer>
-      <Title>Blog</Title>
+    <div className='blog'>
      
       <div className="rentals">
-  {data.house_rentals && (
+  {/* {data.house_rentals && ( */}
     <ul>
-      {data.house_rentals.map((house, index) => (
-        <li key={index} className="rental-item">
+      {/* {data.house_rentals.map((house, index) => ( */}
+        <li  className="rental-item">
           <h2>{"Runda Heights"}</h2>
           <p>{"###Rentals for rent at JATE estate in Runda"}</p>
           <p>{'**Location:Runda'}</p>
@@ -37,15 +37,15 @@ function Blog() {
             <img src={"https://i.roamcdn.net/prop/brk/listing-full-1920w/d302df41ad9f5a054613aa80ed4fab99/-/prod-property-core-backend-media-brk/4771393/e1611fcc-93f6-4570-aa76-c1a42a1c2ce8.jpg"} alt={"swimming pool"} />
           </div>
         </li>
-      ))}
+      {/* ))} */}
     </ul>
-  )}
+  {/* )} */}
 </div>
     <div classname="rentals">
-      {data.house_sales && (
+      {/* {data.house_sales && ( */}
         <ul>
-          {data.house_sales.map((house, index) => (
-            <li key={index} className="rental-item">
+          {/* {data.house_sales.map((house, index) => ( */}
+            <li  className="rental-item">
               <h2>{'Runda Mansionattes'}</h2>
               <p>{'###Mansionattes for sale at JATE estate in Runda'}</p>
               <p>{'**Location:Runda'}</p>
@@ -64,15 +64,15 @@ function Blog() {
              <img src={"https://i.roamcdn.net/prop/brk/listing-full-1920w/52bcb601bfa1a2ef7f2abe2618d1aad9/-/prod-property-core-backend-media-brk/6577065/feccfe57-2fd7-43b4-ba63-6f1c5162548a.jpg"} alt={"master bedroom"} /> 
              </div>
             </li>
-          ))}
+          {/* ))} */}
         </ul>
-      )}
+      {/* )} */}
     </div>
     <div classname="rentals">
-      {data.house_apartment && (
+      {/* {data.house_apartment && ( */}
         <ul>
-          {data.house_apartment.map((house, index) => (
-            <li key={index} className="rental-item">
+          {/* {data.house_apartment.map((house, index) => ( */}
+            <li  className="rental-item">
               <h2>{"*Runda Heights*"}</h2>
               <p>{"###Apartments for sale at JATE estate in Runda"}</p>
               <p>{'**Location:Runda'}</p>
@@ -89,14 +89,14 @@ function Blog() {
               <div className="images-row">
               <img src={"https://apartmentsinheightshouston.com/wp-content/uploads/2018/09/apartments-in-the-heights-houston-welcome-to-an-apartment-complex-with-balconies.jpg"} alt={"exterior of the apartment"} />
               <img src={"https://i.roamcdn.net/prop/brk/listing-full-1920w/1a046f7dabc3b27d1851b0f5383e1da4/-/prod-property-core-backend-media-brk/6526577/c857b3cc-4812-4b94-89e8-c4175f5416ee.jpeg"} alt={"interior of the apartment"} />
-              <img src={"https://www.shutterstock.com/image-photo/underground-parkinggarage-under-apartment-house-parking-1074577835"} alt={"Basement parking"} /> 
+              <img src={"https://i.roamcdn.net/prop/brk/listing-full-1920w/d302df41ad9f5a054613aa80ed4fab99/-/prod-property-core-backend-media-brk/4771393/e1611fcc-93f6-4570-aa76-c1a42a1c2ce8.jpg"} alt={"Basement parking"} /> 
               </div>
             </li>
-          ))}
+          {/* ))} */}
         </ul>
-      )}
+      {/* )} */}
     </div>
-    </BlogContainer>
+    </div>
   );
 };
 

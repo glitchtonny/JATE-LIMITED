@@ -45,6 +45,8 @@ const Navbar = () => {
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
           <NavLink to="/" activeClassName="active">HOME</NavLink>
           <NavLink to="/Blog" activeClassName="active">BLOGS</NavLink>
+          <NavLink to="/login" activeClassName="active">BLOGS</NavLink>
+
         </div>
         {/* <div className={`navbar-user ${isOpen ? 'open' : ''}`}>
           <NavLink to="/Login" activeClassName="active">{Login}</NavLink>

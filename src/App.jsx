@@ -5,9 +5,7 @@ import DetailPage from './DetailPage';
 
 import Navbar from './Navbar';
 import Blog from '.src/assets/Blog';
-
-
-
+import LoginSignUp from './LoginSignUp/LoginSignUp';
 
 
 const App = () => {

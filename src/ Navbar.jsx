@@ -4,7 +4,7 @@ import './NavBar.css';
 import HomePage from './HomePage';
 //import Blog form ""
 //import Login from ""
-import logo from "src/assets/logo for estate.png";
+import logo from "src/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

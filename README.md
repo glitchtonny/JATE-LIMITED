@@ -9,8 +9,11 @@ JATE LIMITED WEBSITE
 <h1>Setup and Installation</h1>
 
 1.clone the repository.
+
 2.Navigate to the project directory.
+
 3.install the dependancies.
+
 4.Access the website
 
 <h1>Technologies used</h1>
